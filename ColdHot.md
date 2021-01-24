@@ -1,0 +1,9 @@
+### 原則Hot問題
+- 副作用が共有される
+- 公式ではHotだと言っていない
+  - 必ずしもHotでない
+- 接続中はshare(replay)を行う
+  - 結果的にHot変換
+- Driver/Signalを見ればHotだとわかる便利さ
+- DriverのOperatorは独自実装できない
+- Driverのメソッドチェーンはメモリを大量消費する
